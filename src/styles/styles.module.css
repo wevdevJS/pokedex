@@ -1,0 +1,486 @@
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.hone_ {
+    flex-direction: row;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #566CD6;
+    height: 100vh;
+    max-width: 20vw;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content {
+    padding: 0 16px;
+    background-color: #F2F4FF;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.logo {
+    padding: 20px 0;
+    object-fit: cover;
+    width: 150px;
+    height: auto;
+}
+
+.login_card_log {
+    width: 250px;
+    height: auto;
+}
+
+.toast_visible {
+    min-width: 250px;
+    background-color: #566CD6;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    font-size: 17px;
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.toast_hidden {
+    min-width: 250px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    font-size: 17px;
+    visibility: hidden;
+}
+
+.avatar {
+    object-fit: cover;
+    width: 170px;
+    height: auto;
+    padding: 20px 0 30px 0;
+}
+
+.content_logout {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logout {
+    width: auto;
+    height: auto;
+}
+
+.content_logout p {
+    width: 100%;
+}
+
+
+.sidebar_header :nth-child(4) {
+    color: #BDC6EF;
+    margin: 5px 0 30px 0;
+
+}
+
+.sidebar_header p,
+.sidebar_header h2 {
+    color: white;
+    margin: 1px;
+}
+
+.sidebar button {
+    background-color: #7789DF;
+    border: none;
+    height: 45px;
+    margin: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.search_input {
+    width: 30%;
+    border-radius: 20px;
+    height: 3vh;
+    border: 1px solid #EEF0FE;
+    padding: 0 0 0 20px;
+    box-shadow: 0 4px 2px -2px #F2F4FF;
+
+
+}
+
+.content_image_back {
+    cursor: pointer;
+    background-color: #566CD6;
+    border-radius: 20px;
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+}
+
+.search_input:focus {
+    outline: none !important;
+    border: 1px solid #566DD7;
+}
+
+.content_search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 0 20px;
+}
+
+.content_search button {
+    background-color: #566DD7;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+}
+
+.content_search button,
+.content_search image {
+    width: 60px;
+    border-radius: 20px;
+    margin-left: -50px;
+}
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.card {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    margin: 2rem;
+    width: 200px;
+}
+
+.card_types {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.card_image {
+    width: 100%;
+}
+
+.card h2 {
+    margin: 40px 0 0 0;
+}
+
+.card p {
+    margin: 5px 0 0 0;
+}
+
+
+.card_pokemon_type {
+    color: white;
+    background-color: green;
+    padding: 5px;
+    border-radius: 55px;
+    font-size: 12px;
+    width: 40px;
+    text-align: center;
+}
+
+.header {
+    height: 70px;
+    background-color: var(--color-primary);
+    display: none;
+}
+
+.header p {
+    width: 50px;
+    background-color: red;
+}
+
+.header_container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.header_image_logo {
+    width: 170px;
+    height: auto;
+    padding: 8px 0;
+}
+
+.header_image_menu {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    padding: 15px;
+}
+
+.detail_pokemon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.detail_pokemon_image {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    margin: 2rem;
+    width: 400px;
+    height: 50%;
+    padding: 40px 0;
+}
+
+.detail_pokemon_image_default {}
+
+.detail_pokemon_description {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 2rem;
+    width: 500px;
+}
+
+.detail_pokemon_description h2 {
+    margin: 15px 0 2px 0;
+}
+
+.detail_pokemon_description_text {
+    margin: 0 0;
+}
+
+.hr {
+    height: 5;
+    border: 10;
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #40415E;
+    height: 100vh;
+}
+
+.login_card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem;
+    width: 400px;
+    height: 50%;
+    padding: 40px 0;
+}
+
+.page_not_found {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.page_not_found_card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    margin: 2rem;
+    width: 400px;
+    height: 30%;
+    padding: 40px 0;
+    justify-content: center;
+}
+
+.card_image_default {
+    object-fit: cover;
+    width: 200px;
+    height: auto;
+}
+
+.input_login {
+    width: 80%;
+    border-radius: 20px;
+    height: 5vh;
+    border: 1px solid #EEF0FE;
+    padding: 0 0 0 20px;
+    box-shadow: 0 4px 2px -2px #F2F4FF;
+    margin: 5px 0;
+}
+
+.content_input_login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_login:focus {
+    outline: none !important;
+    border: 1px solid #566DD7;
+}
+
+.buton_login {
+    cursor: pointer;
+    background-color: #7789DF;
+    border: none;
+    height: 45px;
+    margin: 20px;
+    color: white;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.image_like{
+    cursor: pointer;
+    width: 30px;
+    height: auto;
+}
+
+.pagination_section {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+ 
+  .pagination_section a {
+    color: black;
+    padding: 10px 18px;
+    text-decoration: none;
+  }
+ 
+  .pagination_section p {
+    padding: 10px 18px;
+  } 
+  .pagination_section a:hover:not(.active) {
+    background-color: #566DD7;
+    color: white;
+  }
+ 
+  .pagination_section a:hover(.active) {
+    background-color: red;
+    color: white;
+  }
+
+
+
+@media screen and (max-width: 1200px) {
+    .search_input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .search_input {
+        width: 80%;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .avatar {
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .search_input {
+        width: 100%;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .search_input {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
